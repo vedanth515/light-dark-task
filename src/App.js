@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+// counter app bu using the functional based components
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import React, {useState} from "react";
+import SignLogin from "./signUp and Login";
+
+function UseState(){
+  console.log(useState());
+  const [count,setCount]=useState(0)
+
+  // const a =useState()
+  // console.log(a);
+
+  // const b=[undefined,function(){
+  //   console.log("bbbbb");
+    
+  // }]
+
+  // console.log(x, "xxxxx");
+  // console.log(y, "yyyyy");
+  
+  // const [x,y]=b
+
+  function inc(){
+    setCount(count+1)
+  };
+  function dec(){
+    setCount(count-1)
+  }
+
+  return(
+    <div>
+      <button onClick={dec} disabled={count===0}>-</button>
+      {count}
+      <button onClick={inc} disabled={count===10}>+</button>
     </div>
-  );
+  )
 }
-
-export default App;
+export default UseState;
