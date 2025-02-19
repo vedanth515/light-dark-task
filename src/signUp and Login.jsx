@@ -35,7 +35,7 @@ function SignUpLogin() {
     return (
         <div style={{backgroundColor:themes.backgroundColor,height:"100vh",width:"100%" ,color:themes.color}}>
             <div id='navbar'>
-                <h1>Welcome</h1>
+                <i><h1>Welcome</h1></i>
                 <div id='nav-right'>
                     <button onClick={handleSignUp}>SignUp</button>
                     <button onClick={handleLogin}>Login</button>
