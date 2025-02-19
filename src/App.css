@@ -1,14 +1,15 @@
-
 #navbar{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding:0px 80px;
   align-items: center;
   background-color:lightsalmon;
+  overflow-x: hidden;
 }
 
 #nav-right{
   display: flex;
-  gap:30px;
+  gap:35px;
   align-items: center;
 }
 
@@ -18,4 +19,58 @@
   height:35px;
   border-radius: 5px;
   box-shadow: 1px 1px black;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#nav-right button:hover{
+  background-color: coral;
+  transform: scale(1.1);
+}
+
+#content{
+  display: flex;
+  padding:20px;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 80px;
+  width:100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#content-1{
+  width:47%;
+}
+
+#image-2{
+  width:40%;
+}
+
+#image-2 img{
+  border-radius:10px;
+  box-shadow: 1px 1px 1px 1px black;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#image-2 img:hover{
+  transform: scale(1.05);
+  box-shadow: 3px 3px 5px black;
+}
+
+#nav-right p{
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+#nav-right p:hover{
+  color: darkred;
+  transform: scale(1.2);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
